@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container theme-showcase" role="main" style="margin-top: 75px">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        {% if current_user.is_authenticated %}
+        <h1>Welcome dear {{current_user.email}}</h1>
+        {% else%}
+        <h1>Welcome to the Performance Dashboard of Iberia</h1>
+        {% endif %}
+    </div>
+    <div class="body" role="main" style="margin-top: 75px">
+        <div class="Basecss">
+            <h1></h1>
+        </div>
+        <body
+        background="https://besthqwallpapers.com/Uploads/8-4-2020/127999/thumb2-iberia-logo-airline-white-silk-texture-airline-logos-iberia-emblem.jpg">
+    </body>
+    </div>
+</div>
+{% endblock %}
